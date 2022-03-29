@@ -1,0 +1,39 @@
+.container{
+    margin: 10px;
+    background-color: rgb(223, 226, 230);
+    height: auto;
+    width: 97%;
+    position: relative;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.arrow{
+    width: 10%;
+}
+.carouselCard{
+    width: 490px;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 600px){
+    .main{
+        height: auto;
+        flex-direction: column;
+    }
+    .arrow{
+        display: none;
+    }
+    .carouselCard{
+        display: flex;
+        align-items: center;
+        width: auto;
+        padding-bottom: 10px;
+    }
+
+}

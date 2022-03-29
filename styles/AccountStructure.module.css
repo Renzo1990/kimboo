@@ -1,0 +1,43 @@
+.container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.leftColumn{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: transparent;
+    -webkit-transform: translateZ(0);
+    visibility: visible;
+    -webkit-backface-visibility: hidden;
+}
+
+.rightColumn{
+   width: 80%;
+   margin-left: 20%;
+   background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+        padding-bottom: 10px;
+        height: auto;
+    }
+    .rightColumn{
+        padding: 10px;
+        margin: 0;
+        width: 97%;
+    }
+    .leftColumn{
+        position: fixed;
+        bottom: -92vh;
+        width: 100%;
+    }
+}

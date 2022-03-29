@@ -1,0 +1,246 @@
+.container{
+    padding: 20px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.welcome{
+    color: rgb(82, 83, 83);
+    font-size: 20px;
+}
+
+.welcome font{
+    font-size: 24px;
+    font-weight: bold;
+}
+.print, .print1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.print1{
+    display: none;
+}
+
+.statement, .statement1 {
+    display: flex;
+    align-items: center;
+    color: #800080;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+
+
+.main{
+    display: flex;
+}
+
+.widget{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.quickPay{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.searchInput{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+}
+.input input{
+    width: 100%;
+    height: 30px;
+}
+.searchIcon{
+    position: absolute;
+    top: 0;
+    right: 0;
+} 
+
+.widgetItems{
+    display: flex;
+    padding-top: 30px;
+}
+.row1{
+    width: 100%;
+    padding-bottom: 15px;
+}
+.widgetTitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.widgetTitle h3{
+    color: rgb(82, 83, 83);
+    width: 75%;
+}
+.new{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.new span{
+    color: white;
+    background-color: #800080;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.end{
+    display: flex;
+    min-width: 0;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.square{
+    padding: 2rem;
+    border: 2px solid navajowhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.account{
+    width: 70%;
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+
+.accTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 40px 20px;
+    border-bottom: 0.2px solid rgb(224, 217, 217);
+    border-left: 5px solid #800080;
+}
+
+.accTitle:first-child{
+    border-left: none;
+}
+
+.amountA{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.number{
+    color: rgb(160, 167, 167);
+}
+
+.more{
+
+}
+
+.moreOptions{
+    position: absolute;
+    display: flex;
+    right: 0;
+    width: 300px;
+    height: 75px;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 40px;
+    padding-right: 15px;
+    color: #800080;
+    background-color: white;
+    padding-left: 10px;
+    visibility: hidden;
+    transition: width 5s;
+    cursor: pointer;
+}
+
+.wallet{
+    display: flex;
+    align-items: center;
+    color: rgb(160, 167, 167);
+}
+
+.wallet font{
+    color: black;
+}
+
+.saveA{
+    padding-right: 40px;
+}
+
+
+@media screen and (max-width: 600px){
+    .print{
+        display: none;
+    }
+    .print1{
+        display: block;
+        padding-top: 10px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .widget{
+        width: 100%;
+    }
+    .end{
+        flex-wrap: nowrap;
+    }
+    .square{
+        padding: 0.6rem;
+    }
+
+    .account{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .accTitle{
+        padding: 40px 8px;
+    }
+
+}

@@ -1,0 +1,55 @@
+.container{
+    background-color: white;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-style: solid;
+    border-top-width: 0.5px;
+    border-top-color: rgb(238, 238, 238);
+    z-index: 99999;
+}
+
+.appVersion{
+    width: 50%;
+}
+
+.appVersion span{
+    font-size: 11px;
+}
+
+.others{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    color: rgb(179, 175, 175);
+    font-size: 14px;
+    border-right-style: solid;
+    border-right-width: 0.5px;
+    border-right-color: gainsboro;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        display: none;
+        visibility: hidden;
+        /*flex-direction: column;*/
+
+    }
+    /*
+    .appVersion{
+        width: 100%;
+        cursor: pointer;
+    }
+    .others{
+        width: 100%;
+        cursor: pointer;
+    }
+    .others:hover{
+        color: antiquewhite;
+    } */
+}
